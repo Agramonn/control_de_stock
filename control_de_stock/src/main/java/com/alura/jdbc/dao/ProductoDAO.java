@@ -56,7 +56,7 @@ public class ProductoDAO {
         	}
 	}
 
-		public List<Producto> listar() {
+		public List<Producto> listar() throws SQLException {
 			List <Producto> resultado = new ArrayList<>();
 			final Connection con = new ConnectionFactory().recuperaConexion();
 			
